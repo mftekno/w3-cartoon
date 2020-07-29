@@ -1,0 +1,10 @@
+CREATE TABLE [workcube_devcatalyst].[CARTOONS](
+	[CartoonId] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](250) NOT NULL,
+	[BroadcastTime] [nvarchar](25) NULL,
+	[TVChannel] [nvarchar](150) NULL,
+ CONSTRAINT [PK_CARTOONS] PRIMARY KEY CLUSTERED 
+(
+	[CartoonId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
